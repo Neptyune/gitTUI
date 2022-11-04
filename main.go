@@ -16,8 +16,8 @@ type model struct {
 }
 
 func main() {
-	tabs := []string{"Lip Gloss", "Blush", "Eye Shadow", "Mascara", "Foundation"}
-	tabContent := []string{"Lip Gloss Tab", "Blush Tab", "Eye Shadow Tab", "Mascara Tab", "Foundation Tab"}
+	tabs := []string{"Files", "Changes", "Commit", "Push/Pull", "Commit History"}
+	tabContent := []string{"List of files here", "File diff here", "Enter commit message", "Synchronize repo with remote", "Commit history"}
 	m := model{Tabs: tabs, TabContent: tabContent}
 	if err := tea.NewProgram(m).Start(); err != nil {
 		fmt.Println("Error running program:", err)
